@@ -1,0 +1,116 @@
+main{
+   padding: 5rem 1.2rem;
+   background-color: #FAFAF9;
+   margin: auto;
+}
+/************* Item star SVG  *******************/
+.backStar{
+   width: 50px;
+   height: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 1.2rem;
+}
+.backStar::before{
+   display: block;
+   content: '';
+   width: 47px;
+   height: 47px;
+   background-color: #F5C044;
+   border-radius: 50%;
+}
+.star{
+position: absolute;
+}
+.star path{
+   fill: url(#color);
+   fill: url(#color-2);
+   filter: drop-shadow(0rem .15rem 1px rgba(0, 0, 0, 0.1));
+}
+
+
+/**********************  Section - 1  ********************************/
+h1{
+   font-family: 'Sora', sans-serif;
+   font-size: 2.25rem;
+   margin: 0;
+}
+.descrip{
+   font-family: 'Sora', sans-serif;
+   font-size: 1.25rem;
+   color: #52525A;
+   line-height: 2rem;
+   text-align: left;
+   margin-right: 2.5rem;
+   max-width: 556px;
+}
+ul{
+   list-style: none;
+   padding: 0;
+   margin-bottom: 5rem;
+}
+li{display: flex;}
+li p{
+   margin-left: 1rem;
+   line-height: .6rem;
+   color: #52525A;
+} 
+.check{
+   display: inline;
+}
+.item_list{
+   font-family: 'Sora', sans-serif;
+   font-size: .875rem;
+}
+
+
+/***************************** Section - 2 *****************************/
+.coment{
+   width: 18rem;
+   padding: 1.25rem 2rem;
+   background-color: #fff;
+   box-shadow: rgba(0, 0, 0, 0.05) 0px 10px 50px;
+}
+.coment-1{
+   margin-left: auto;
+   margin-right: 0;
+   margin-bottom: 3rem;
+}
+.logo{
+   width:6rem;
+   margin-right: .8rem;
+}
+.punt, .noPunt{
+   width: 27px;
+   margin-bottom: 3px;
+}
+.text_coment, h4{
+   font-family: 'Sora', sans-serif;
+   font-size: 1rem;
+}
+.text_coment{
+   color: #52525A;
+   margin: 0;
+}
+h4{
+   margin: 1rem 0rem .5rem 0rem;
+}
+
+/****************************** Media **********************************/
+
+
+@media (max-width: 1220px) and (min-width: 600px) {
+   body{
+      max-width: 640px;
+      margin: auto;
+   }
+}
+@media (min-width: 1221px){
+   main{
+      display: grid;
+      grid-template-columns: 1fr 1fr ;
+      max-width: 1280px
+
+   }
+}
